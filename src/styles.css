@@ -5,8 +5,11 @@
 @tailwind utilities;
 
 .card{
-    @apply bg-white justify-between rounded overflow-hidden shadow-lg relative;
+    @apply justify-between bg-white rounded overflow-hidden shadow-lg relative mob:block tab:flex;
 }
 .badge{
-    @apply uppercase m-4 text-xs text-whitesmoke bg-gray-100 p-2 rounded-full absolute top-0;
+    @apply uppercase m-4 text-xs bg-gray-100 p-2 rounded-full absolute top-0 ;
+}
+.cont{
+    @apply object-cover mob:w-full tab:w-80;
 }
