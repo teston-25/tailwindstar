@@ -5,11 +5,17 @@
 @tailwind utilities;
 
 .card{
-    @apply justify-between bg-white rounded overflow-hidden shadow-lg relative mob:block tab:flex;
+    @apply justify-between bg-white rounded object-cover overflow-hidden shadow-lg relative mob:block tab:flex;
 }
 .badge{
     @apply uppercase m-4 text-xs bg-gray-100 p-2 rounded-full absolute top-0 ;
 }
 .cont{
-    @apply object-cover mob:w-full tab:w-80;
+    @apply object-cover w-full ;
+}
+.gridd{
+    @apply grid gap-5 tab:grid-cols-3;
+}
+.btn{
+    @apply text-xs font-bold rounded-full uppercase py-2 px-3 cursor-pointer tracking-wider;
 }
