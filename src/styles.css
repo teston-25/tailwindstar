@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card{
+    @apply bg-white justify-between rounded overflow-hidden shadow-lg relative;
+}
+.badge{
+    @apply uppercase m-4 text-xs text-whitesmoke bg-gray-100 p-2 rounded-full absolute top-0;
+}
