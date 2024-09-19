@@ -11,8 +11,8 @@
     <div>
         <div class="grid tab:grid-cols-4">
             <div class="col-span-4 tab:col-span-1 ">
-                <nav class="px-0 py-6 text-right w-full">
-                    <div class="text-xl px-4 py-2 flex justify-between ">
+                <nav class="px-0 py-3 text-right w-full block ">
+                    <div class="text-xl px-4 py-2 flex justify-between tab:justify-end">
                         <!-- Left side: Logo or Title -->
                         <h1>
                           <a href="#">Teston</a>
@@ -20,17 +20,19 @@
                       
                         <!-- Right side: Icon (responsive) -->
                         <div>
-                          <button class="btn-ham">
-                            <svg class="w-6 h-6 block hidden tab:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <button class="btn-ham block tab:hidden">
+                            <svg class="w-6 h-6 block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                               </svg>
-                            </div>
-                            <svg class="w-6 block tab:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                              </svg>                          
-                          </button>
+                            </button>
+                            <button class="btn-close hidden">
+                            <svg class="w-6 block " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>                          
+                            </button>
+                        </div>
                       </div>
-                    <div class=" hidden tab:display">
+                    <div class=" nav hidden tab:block">
                         <ul>
                             <li class="py-2 ">
                                 <a href="#" class="home text-sm px-4 flex justify-end border-r-4 border-white">
@@ -67,7 +69,7 @@
                 </nav>
             </div>
 <!--End of nav -->
-        <main class="py-1 px-16 bg-gray-100 col-span-3 h-100vh pb-20">
+        <main class="py-1 px-16 bg-gray-100 col-span-3 h-100vh pb-20 w-full">
 
             <div class="text-red-400 flex p-4 justify-center tab:justify-end">
                 <a href="#" class="login btn border-red-400 tab:border-2 hover:bg-red-400 hover:text-white">Log-in</a>
@@ -80,8 +82,74 @@
 
                 <div class="card p-8 desk:p-12 font-serif">
                     <div class="text-xl p-8">
+                        <div>
+                            <p class="mt-4 text-lg leading-6 text-gray-600">We’d love to hear from you! Reach out for inquiries or feedback.</p>
+    </div>
+
+    <div class="mt-12 grid grid-cols-1 tab:grid-cols-2 gap-8">
+
+      <!-- Contact Form -->
+      <div class="bg-gray-100 p-8 shadow-lg rounded-lg">
+        <h3 class="text-xl font-semibold text-gray-900 mb-6">Send Us a Message</h3>
+        <form action="#" method="POST">
+          <div class="mb-4">
+            <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
+            <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-sm font-medium text-gray-700">Your Email</label>
+            <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+            <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required></textarea>
+          </div>
+          <button type="submit" class="w-full bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="bg-gray-100 p-8 shadow-lg rounded-lg">
+        <h3 class="text-xl font-semibold text-gray-900 mb-6">Our Contact Details</h3>
+        <ul class="space-y-4">
+          <li>
+            <div class="flex items-center">
+              <svg class="w-6 h-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 11c2.97 0 5.7 1.08 7.72 2.87.4.34.62.85.62 1.37v4.76a2.5 2.5 0 01-2.5 2.5H5.5a2.5 2.5 0 01-2.5-2.5v-4.76c0-.52.22-1.03.62-1.37A11.97 11.97 0 0112 11zm0-2a3.5 3.5 0 110-7 3.5 3.5 0 010 7z" />
+              </svg>
+              <span class="ml-3 text-gray-700">123 Teston St, Coffee Town</span>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center">
+                <svg class="w-6 h-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z" />
+                  </svg>                  
+              <span class="ml-3 text-gray-700">Email: <a href="mailto:info@teston.com" class="text-indigo-500">info@teston.com</a></span>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center">
+                <svg class="w-6 h-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                  </svg>                  
+              <span class="ml-3 text-gray-700">Phone: <a href="tel:+123456789" class="text-indigo-500">+1 234 567 89</a></span>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center space-x-4">
+              <a href="#" class="text-indigo-500 hover:text-indigo-600">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.731 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.324 1.324h11.496v-9.293h-3.128v-3.622h3.128v-2.671c0-3.1 1.891-4.785 4.655-4.785 1.324 0 2.464.099 2.794.144v3.24h-1.917c-1.504 0-1.794.713-1.794 1.758v2.308h3.587l-.467 3.622h-3.121v9.293h6.125c.73 0 1.324-.593 1.324-1.324v-21.35c0-.731-.594-1.324-1.324-1.324z"/></svg>
+              </a>
+              <a href="#" class="text-indigo-500 hover:text-indigo-600">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.162 5.656c-.797.353-1.653.591-2.552.698.918-.551 1.627-1.421 1.961-2.463-.86.51-1.811.879-2.825 1.077-.813-.866-1.973-1.407-3.256-1.407-2.464 0-4.461 1.997-4.461 4.461 0 .349.039.689.114 1.016-3.706-.186-6.994-1.962-9.193-4.657-.384.659-.605 1.426-.605 2.244 0 1.549.788 2.916 1.99 3.717-.733-.023-1.423-.225-2.026-.56v.056c0 2.165 1.541 3.97 3.587 4.379-.374.102-.768.157-1.175.157-.287 0-.566-.028-.838-.079.566 1.766 2.207 3.053 4.15 3.089-1.521 1.192-3.44 1.903-5.524 1.903-.359 0-.713-.021-1.064-.062 1.97 1.262 4.31 2.001 6.823 2.001 8.187 0 12.662-6.785 12.662-12.662 0-.192-.005-.385-.013-.577.868-.626 1.621-1.406 2.218-2.296z"/></svg>
+            </a>
+                </div>
+                </li>
+            </ul>
+            </div>
                         
-                    </div>
+            </div>
                 </div>
             </div>
 
