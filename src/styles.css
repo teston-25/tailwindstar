@@ -14,8 +14,11 @@
     @apply object-cover w-full ;
 }
 .gridd{
-    @apply grid gap-5 tab:grid-cols-3;
+    @apply grid gap-8 tab:grid-cols-3;
 }
 .btn{
     @apply text-xs font-bold rounded-full uppercase py-2 px-3 cursor-pointer tracking-wider;
+}
+.hov{
+    @apply bg-red-400 text-white p-1
 }
