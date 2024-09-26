@@ -10,15 +10,15 @@ const nav = document.querySelector('.nav');
 
 home.addEventListener('click',function(){
     window.location.href="index.html";
-})
+});
 
 about.addEventListener('click',function(){
     window.location.href="about.html";
-})
+});
 
 contact.addEventListener('click',function(){
     window.location.href="contacts.html";
-})
+});
 
 btnHam.addEventListener('click',function(){
     btnClose.classList.add('block');
@@ -27,7 +27,7 @@ btnHam.addEventListener('click',function(){
     btnHam.classList.remove('block');
     nav.classList.add('block');
     nav.classList.remove('hidden');
-})
+});
 btnClose.addEventListener('click',function(){
     btnClose.classList.remove('block');
     btnClose.classList.add('hidden');
@@ -35,12 +35,12 @@ btnClose.addEventListener('click',function(){
     btnHam.classList.add('block');
     nav.classList.remove('block');
     nav.classList.add('hidden');
-})
+});
 
 login.addEventListener('click',function(){
-
-})
+    window.location.href="login.html";
+});
 
 signup.addEventListener('click', function(){
-    
-})
+    window.location.href="signup.html";    
+});
